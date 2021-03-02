@@ -1,4 +1,4 @@
-# empower-with-code-survey-form
+# soup-kitchen-volunteer-survey-form
 This is a simple survey form that I created to practice responsive web design for the Responsive Web Design course on freeCodeCamp. Link to project: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form
 
 # Motivation
