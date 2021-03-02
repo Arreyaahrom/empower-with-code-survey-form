@@ -1,0 +1,11 @@
+header {
+  display: block;
+  text-align: center;
+  background-color: pink;
+}
+
+#survey-form {
+  display: block;
+  background-color: yellow;
+  padding: 0 500px;
+}
