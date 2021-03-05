@@ -10,11 +10,14 @@ header {
   color: white;
 }
 
-
 html, body {
   background-color: rgb(189,190,238); 
   margin: 0;
   height: 100%;
+  background-image: url("https://i.ibb.co/5r1Qf0n/vector-transparent.png"), url("https://i.ibb.co/5r1Qf0n/vector-transparent.png");
+
+  background-position: bottom left, bottom right;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .container {
@@ -22,6 +25,7 @@ html, body {
   padding-bottom: 50px;
   padding: 0;
 }
+
 
 #survey-form {
   background-color: white;
@@ -37,6 +41,12 @@ html, body {
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12)
 ;
+
+}
+@media(min-width: 580px) {
+  .survey-form{
+    max-width: 580px;
+  }
 }
 
 .form-group {
