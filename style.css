@@ -37,8 +37,11 @@ body {
 ;
 }
 
-.form-section {
+.form-group {
   margin-bottom: 30px;
     font-family: var(--font);
 }
 
+#comments {
+  margin: auto;
+}
