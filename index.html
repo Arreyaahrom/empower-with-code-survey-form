@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Soup Kitchen Survey Form</title>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" 
+rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+<body>
+  <!-- Main container -->
+  <main class="main-container">
+    
+    <!-- Header -->
+    <header>
+    <h1 id="title">Soup Kitchen Volunteer Form</h1>
+    <p id="description">Show up for your community now and sign up      to volunteer at your local soup kitchen!</p>
+    </header>
+    
+    <!-- Form -->
+      <form id="survey-form">
+        
+        <!-- Basic information -->
+        <!-- Name -->
+      <div class="form-section">
+        <label for="name" id="name-label">Full Name:</label> 
+        <input type="text" id="name" name="name" required                 placeholder="Enter a valid name">
+      </div>
+       <!-- Email -->
+      <div class="form-section">
+          <label for="email" id="email-label">Email:</label> 
+        <input type="email" id="email" name="email" required               placeholder="Enter a valid email address">
+      </div>
+        <!-- Age -->
+      <div class="form-section">  
+        <label for="age" id="number-label">Age:</label>
+        <input type="number" id="number" name="age" required                placeholder="Enter a valid age" max="100" min="18"
+      </div>
+        
+        <!-- Radio -->
+       <div class="form-section"> 
+        <p>Will you be needing   
+          transportation to and from the volunteer site?</p>
+        <input type="radio" id="transportation" name="transportation" value="yes">
+        <label for="yes" id="transportation">Yes</label>
+        <input type="radio" id="transportation" name="transportation" value="no">
+        <label for="no" id="transportation">No</label>
+        <br>
+        </div> 
+        
+        
+       <!--Dropdown selection-->
+       <div class="form-section">
+        <p>Which volunteer activity are you interested in?</p>
+        <select name="activity" id="dropdown">
+          <option value="distributeFood">Distributing     
+          food</option>
+          <option value="packagingFood">Packaging food</option>
+          <option value="cookingFood">Cooking/food   
+          preparation</option>
+          <option value="cleaning">Cleaning</option>
+          <option value="transporting">Transporting</option>
+        </select>
+        <br>
+        <br>
+        </div>
+        
+        
+        <!-- Day/Date Selection -->
+        <div class="form-section">
+          <fieldset>
+            <legend>Which days are you available to volunteer?</legend>
+            <input type="checkbox" id="day" value="Friday">
+            <label for="day">Friday</label></br>
+            <input type="checkbox" id="day"value="Saturday">
+            <label for="day">Saturday</label></br>
+            <input type="checkbox" id="day" value="Sunday">
+            <label for="day">Sunday</label></br>
+           </fieldset>
+        </div>
+      <!--Additional Comments Section-->
+      <label for="experience">Tell us about yourself and why you would like to volunteer with our organisation</label>
+      <br>
+      <textarea name="comments" id="comments" rows="5" cols="100"></textarea>
+      <br>
+
+      <!--Submit button-->
+    <div class="form-section">
+      <button id="submit">Submit</button>
+    </div>   
+    
+   </form>
+ </main>
+
+</body>
+
+</html>
+
