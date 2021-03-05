@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width">
     <title>Soup Kitchen Survey Form</title>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<!-- Bootstrap -->
+<!-- CSS only -->
+
+<!-- Google font -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" 
 rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    
   </head>
 
 <body>
@@ -18,7 +26,7 @@ rel="stylesheet">
     <!-- Header -->
     <header>
     <h1 id="title">Soup Kitchen Volunteer Form</h1>
-    <p id="description">Show up for your community now and sign up      to volunteer at your local soup kitchen!</p>
+    <p id="description">Show up for your community now and sign up to volunteer at your local soup kitchen!</p>
     </header>
     
     <!-- Form -->
@@ -26,72 +34,69 @@ rel="stylesheet">
         
         <!-- Basic information -->
         <!-- Name -->
-      <div class="form-section">
+      <div class="form-group">
         <label for="name" id="name-label">Full Name:</label> 
-        <input type="text" id="name" name="name" required                 placeholder="Enter a valid name">
+        <input type="text"class="form-control" id="name" name="name" placeholder="Enter a valid name">
       </div>
        <!-- Email -->
-      <div class="form-section">
+      <div class="form-group">
           <label for="email" id="email-label">Email:</label> 
-        <input type="email" id="email" name="email" required               placeholder="Enter a valid email address">
+        <input type="email" class="form-control" id="email" placeholder="Enter a valid email address">
       </div>
         <!-- Age -->
-      <div class="form-section">  
+      <div class="form-group">  
         <label for="age" id="number-label">Age:</label>
-        <input type="number" id="number" name="age" required                placeholder="Enter a valid age" max="100" min="18"
+        <input type="number" class="form-control" id="number" name="age" placeholder="Enter a valid age" max="100" min="18">
       </div>
         
         <!-- Radio -->
-       <div class="form-section"> 
+       <div class="form-group"> 
         <p>Will you be needing   
           transportation to and from the volunteer site?</p>
-        <input type="radio" id="transportation" name="transportation" value="yes">
+        <input class="form-check-input" type="radio" id="transportation" name="transportation" value="yes">
         <label for="yes" id="transportation">Yes</label>
-        <input type="radio" id="transportation" name="transportation" value="no">
+        <input class="form-check-input" type="radio" id="transportation" name="transportation" value="no">
         <label for="no" id="transportation">No</label>
-        <br>
         </div> 
         
         
        <!--Dropdown selection-->
-       <div class="form-section">
+       <div class="form-group">
         <p>Which volunteer activity are you interested in?</p>
-        <select name="activity" id="dropdown">
-          <option value="distributeFood">Distributing     
-          food</option>
+        <select class="form-control" name="dropdown" id="dropdown">
+          <option value="distributeFood">Distributing food</option>
           <option value="packagingFood">Packaging food</option>
-          <option value="cookingFood">Cooking/food   
-          preparation</option>
+          <option value="cookingFood">Cooking/food preparation</option>
           <option value="cleaning">Cleaning</option>
           <option value="transporting">Transporting</option>
         </select>
-        <br>
-        <br>
         </div>
         
         
         <!-- Day/Date Selection -->
-        <div class="form-section">
+        <div class="form-group">
           <fieldset>
-            <legend>Which days are you available to volunteer?</legend>
-            <input type="checkbox" id="day" value="Friday">
-            <label for="day">Friday</label></br>
-            <input type="checkbox" id="day"value="Saturday">
-            <label for="day">Saturday</label></br>
-            <input type="checkbox" id="day" value="Sunday">
-            <label for="day">Sunday</label></br>
+            <p>Which days are you available to volunteer?</p>
+            <input class="form-check-input" type="checkbox" value="" id="friday">
+            <label class="form-check-label" for="friday">Friday</label>
+            <input class="form-check-input" type="checkbox" value="" id="Saturday">
+            <label class="form-check-label" for="Saturday">Saturday</label>
+            <input class="form-check-input" type="checkbox" value="" id="Sunday">
+            <label class="form-check-label" for="Sunday">Sunday</label>
            </fieldset>
         </div>
+      
       <!--Additional Comments Section-->
-      <label for="experience">Tell us about yourself and why you would like to volunteer with our organisation</label>
-      <br>
-      <textarea name="comments" id="comments" rows="5" cols="100"></textarea>
-      <br>
+      <div class="form-group">
+      <label for="exampleFormControlTextarea1">Tell us about yourself and why you're interested in volunteering with us</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
 
       <!--Submit button-->
-    <div class="form-section">
-      <button id="submit">Submit</button>
-    </div>   
+      <div class="form-group">
+        <button class="btn btn-primary btn-lg btn-block" id="submit" type="submit">Submit</button>
+      </div>
+    
     
    </form>
  </main>
