@@ -11,8 +11,10 @@ header {
 }
 
 
-body {
+html, body {
   background-color: rgb(189,190,238); 
+  margin: 0;
+  height: 100%;
 }
 
 .container {
